@@ -1,0 +1,31 @@
+<section>
+  <div class="block">
+    <div class="container">
+       <div class="row">
+         <div class="col-lg-12">
+
+           <div class="job-grid-sec">
+            <div class="row">
+
+              <div  *ngFor="let item of arr" class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <div class="job-grid border">
+                  <div class="job-title-sec">
+
+                    <h3>{{item.c_name}}</h3>
+                    <span>{{item.c_emailid}}</span>
+
+                  </div>
+                  <span class="job-lctn">Sacramento, California</span>
+                 <button  (click)="onViewmore(item)">View Profile</button>
+                </div><!-- JOB Grid -->
+              </div>
+            </div>
+          </div>
+
+         </div>
+       </div>
+    </div>
+  </div>
+</section>
+
+

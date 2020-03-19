@@ -1,0 +1,45 @@
+<section>
+  <div class="block remove-top">
+  <div class="container">
+     <div class="row no-gape">
+       <!-- <aside class="col-lg-3 column">
+         <div class="widget border">
+           <h3 class="sb-title open">Date Posted</h3>
+           <div class="posted_widget">
+            <input type="radio" name="choose" id="232"><label for="232">Last Hour</label><br />
+            <input type="radio" name="choose" id="wwqe"><label for="wwqe">Last 24 hours</label><br />
+            <input type="radio" name="choose" id="erewr"><label for="erewr">Last 7 days</label><br />
+            <input type="radio" name="choose" id="qwe"><label for="qwe">Last 14 days</label><br />
+            <input type="radio" name="choose" id="wqe"><label for="wqe">Last 30 days</label><br />
+            <input type="radio" name="choose" id="qweqw"><label class="nm" for="qweqw">All</label><br />
+           </div>
+         </div>
+
+       </aside> -->
+
+  <h5> Event</h5>
+
+         <table>
+     <tr  *ngFor="let item of arr,let i=index">
+       <br>
+      <div class="job-listing wtabs" style="width:300%;" align="center">
+        <div class="job-title-sec" >
+          <div class="c-logo" style="color: black">Type - {{item.event_type}} </div>
+          <h3 style="color: black;">Name - {{item.event_name}}</h3><br>
+          <h3 style="color:black;">Date - {{item.event_date | date}}</h3>
+          <h3 style="color: black;">Venue - {{item.event_venue}}</h3>
+          <h3 style="color:  black;">Time - {{item.event_time}}</h3>
+          <h3 style="color: black;">Fees - {{item.event_fees}}</h3>
+        </div>
+
+
+        <div class="job-style-bx">
+
+          <td class="fav-job"><a href="http://localhost:3000/images/material_photo/{{item.m_file}}" target="_blank">
+            <i class="la la-download" style="color:crimson; width: 30px; height: 30px;"></i></a></td>
+
+        </div>
+      </div>
+     </tr>
+
+
